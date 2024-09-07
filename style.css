@@ -1,0 +1,84 @@
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 19px 12px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 0 13px;;
+    
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+.container{
+    flex:1;
+    max-width: 80vw;
+    margin :auto;
+    padding:9px 15px;
+}
+.container h1{
+    padding: 12px 0;
+}
+ul>li>a:hover{
+    color: grey;
+}
+input[type='text']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.btn{
+    background:black;
+    color: white;
+    padding: 3px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+footer{
+    margin-top: auto;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and(max-width:600px){
+    .container{
+        font-size: 12px;
+    }
+    input[type='text']{
+        width:100%;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
